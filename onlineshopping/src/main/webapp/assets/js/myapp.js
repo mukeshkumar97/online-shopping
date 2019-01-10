@@ -4,15 +4,18 @@ $(function() {
 	    
 	case 'About Us':
 		$('#about').addClass('active');
-		bresk;
+		break;
 		
 	case 'Contact Us':
 		$('#contact').addClass('active');
-		bresk;
-		
+		break;
+	case 'All Products':
+		$('#listproducts').addClass('active');
+		break;
 	default:
-		$('#home').addClass('active');
-		
+		$('#listProducts').addClass('active');
+	    $('#a_'+menu).addClass('active');
+		break;
 	
 	}
 	

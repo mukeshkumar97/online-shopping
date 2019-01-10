@@ -31,7 +31,12 @@
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootstrap Readable Theme-->
-<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+
+<!--  <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet"> --> 
+
+
+
+
 
 <!-- Custom CSS -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -69,6 +74,12 @@
 			<c:if test="${userClickContact == true}">
 				<%@include file="contact.jsp"%>
 			</c:if>
+			
+						<!-- Load only when user clicks contact-->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
+			
 		</div>
 		<!-- Footer comes here -->
 		<%@include file="./shared/footer.jsp"%>

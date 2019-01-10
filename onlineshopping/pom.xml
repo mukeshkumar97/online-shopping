@@ -15,6 +15,14 @@
 	</properties>
 
 	<dependencies>
+	
+		<!-- Link backend project -->
+		<dependency>
+			<groupId>net.mk</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			
+		</dependency>
 
 		<!-- JAVA EE API -->
 		<dependency>
@@ -46,7 +54,7 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		
+
 	</dependencies>
 	<build>
 		<plugins>
